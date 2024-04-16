@@ -2,7 +2,7 @@ body {
 	background-color: black;
 	color: white;
 	font-family: monospace;
-	font-size: 18px;
+	font-size: 14px;
 }
 
 .main-container {
@@ -11,14 +11,18 @@ body {
 	justify-content: center;
 	align-items: center;
 	padding: 40px;
+	border: 1px solid;
+	margin: 20px;
 }
 
 .header {
 	font-size: 22px;
+	text-align: center;
 }
 
 .navbar {
 	padding: 20px;
+	text-align: center;
 }
 
 .link {
@@ -26,5 +30,7 @@ body {
 }
 
 .main-page-content {
-
+	text-align: center;
+	margin: 0px 100px;
+	padding: 0px 10px;
 }
