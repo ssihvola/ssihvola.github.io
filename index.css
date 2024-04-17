@@ -3,6 +3,8 @@ body {
 	color: white;
 	font-family: monospace;
 	font-size: 14px;
+	padding: 20px;
+	margin: 20px;
 }
 
 a {
@@ -15,9 +17,8 @@ a {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 40px;
+	padding: 60px;
 	border: 1px solid;
-	margin: 20px;
 }
 
 .header {
