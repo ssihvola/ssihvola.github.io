@@ -6,51 +6,58 @@ body {
 	color: white;
 	font-family: monospace;
 	font-size: 14px;
-	padding: 5px 20px;
-	margin: 5px 20px;
 }
 
 a {
 	color: white;
 	text-decoration: none;
 }
+
+.main-container {
+	padding: 40px;
+}
+
 h2 {
+	padding-top: 0px;
+	margin-top: 0px;
 	font-size: 16px;
 }
 
-.main-container {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding: 40px;
+.header, .navbar, .footer, .main-page-content {
+	text-align: center; /* Center the heading, navbar, and footer */
 }
 
 .header {
 	font-size: 22px;
-	text-align: center;
+}
+
+.main-page-content {
+	padding: 30px;
 }
 
 .footer {
 	font-size: 12px;
 	padding-top: 40px;
-	text-align: center;
 }
 
 .navbar {
 	padding: 20px;
-	text-align: center;
 }
 
 .link {
 	padding: 10px;
 }
 
-.main-page-content {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	margin: 0px 100px;
-	padding: 0px 100px;
+p {
+	margin: 0 auto; /* Center horizontally */
+	padding: 0 40px; /* Add padding for desktop view */
+	max-width: 800px; /* Set max-width for content */
+	text-align: left; /* Align text to the left */
+}
+
+/* Media Query for Mobile View */
+@media only screen and (max-width: 600px) {
+  .main-page-content {
+    padding: 0 20px; /* Reduce padding for mobile view */
+  }
 }
