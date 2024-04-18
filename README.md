@@ -8,6 +8,6 @@ The source code of my home page.
 - Write the first blog entry
 - Contact form: how to get the message straight to email easily, efficiently and free/cheap
 
-# Note to self:
+# Note to self
 
 Do not drink half a liter of coffee after lunch. Just don't do it.
