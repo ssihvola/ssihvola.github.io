@@ -50,6 +50,31 @@ h2 {
 	padding: 5px;
 }
 
+.contact-form form {
+	padding: 30px;
+	display: flex;
+  flex-direction: column;
+	align-items: center;
+}
+
+.contact-form label {
+	margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%; /* Make input fields and textarea full-width */
+  max-width: 400px; /* Set maximum width */
+  padding: 4px; /* Add padding */
+	margin-bottom: 5px;
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+.contact-form button {
+	margin-top: 5px;
+}
+
 p {
 	margin: 0 auto; /* Center horizontally */
 	padding: 0 40px; /* Add padding for desktop view */
