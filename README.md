@@ -4,9 +4,8 @@ The source code of my home page.
 
 # To do
 
-- Dec 2020 - Jan 2021 visual poems: curate & photograph the best, post into works as .jpg
-- Index.html text
-- Write the first blog entry
+- Dec 2020 - Jan 2021 visual poems: select & photograph the best
+- Kesäjuhlat cassette rip
 - Portfolio site as an independent document
 
 # Note to self
