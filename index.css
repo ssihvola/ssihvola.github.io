@@ -23,7 +23,7 @@ a {
 	padding: 5px;
 }
 
-p {
+h3, p {
 	margin: 0 auto;
 	padding: 0 40px; 
 	max-width: 800px; 
