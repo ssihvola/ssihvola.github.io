@@ -2,19 +2,19 @@
 
 The source code of my home page. 
 
-# To do
+# To do / current projects
 
 - Dec 2020 - Jan 2021 visual poems: select & photograph the best
 - Kesäjuhlat cassette rip
 - Hymyilevä Apollo W/ord 2013 live
+- Irtikytkentöjä
+- Ieskadulla cassette mastering & dubbing
+- In The Time Of Water comeback
 - Portfolio
 - Create test automation to check the links & contact form
 
 # Current projects
 
-- Ieskadulla cassette mastering & dubbing (harsh noise)
-- Ambient/experimental material: possibly a cassette release in autumn?
-- Irtikytkentöjä chapbook
 
 # Note to self
 
