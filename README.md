@@ -6,7 +6,6 @@ The source code of my home page.
 
 - Dec 2020 - Jan 2021 visual poems: select & photograph the best
 - Kesäjuhlat cassette rip
-- Hymyilevä Apollo W/ord 2013 live
 - Irtikytkentöjä
 - Ieskadulla cassette mastering & dubbing
 - In The Time Of Water comeback
