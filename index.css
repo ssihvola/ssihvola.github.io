@@ -75,3 +75,15 @@ h3, p {
 	width: 20px;
 	padding-bottom: 10px;
 }
+
+.territorycontainer {
+	max-width: 100%;
+	overflow: hidden;
+}
+
+.territoryimage {
+	max-width: 100%; /* Make the image responsive */
+	height: auto; /* Maintain aspect ratio */
+	display: block; /* Ensure proper rendering */
+	margin: 0 auto; /* Center the image horizontally */
+}
