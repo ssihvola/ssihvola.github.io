@@ -13,9 +13,6 @@ The source code of my home page.
 - Portfolio
 - Create test automation to check the links & contact form
 
-# Current projects
-
-
 # Note to self
 
 Do not drink half a liter of coffee after lunch. Just don't do it.
