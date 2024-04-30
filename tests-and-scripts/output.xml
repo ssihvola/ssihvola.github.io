@@ -1,193 +1,193 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.10.12 on linux)" generated="2024-04-30T12:48:24.835744" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.10.12 on linux)" generated="2024-04-30T13:08:28.073607" rpa="false" schemaversion="5">
 <suite id="s1" name="Links" source="/home/ssihvola/Desktop/ssihvola.github.io/tests-and-scripts/links.robot">
 <test id="s1-t1" name="Check music links" line="5">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-04-30T12:48:24.995462" level="INFO">Opening browser 'chrome' to base url 'https://samposihvola.com'.</msg>
+<msg time="2024-04-30T13:08:28.225266" level="INFO">Opening browser 'chrome' to base url 'https://samposihvola.com'.</msg>
 <arg>url=https://samposihvola.com</arg>
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-04-30T12:48:24.995126" elapsed="1.702079"/>
+<status status="PASS" start="2024-04-30T13:08:28.224948" elapsed="1.646030"/>
 </kw>
 <kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2024-04-30T12:48:26.698886" level="INFO">Clicking link 'Pummit Tampereella (2023)'.</msg>
+<msg time="2024-04-30T13:08:29.872986" level="INFO">Clicking link 'Pummit Tampereella (2023)'.</msg>
 <arg>Pummit Tampereella (2023)</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-30T12:48:26.697866" elapsed="0.119339"/>
+<status status="PASS" start="2024-04-30T13:08:29.871870" elapsed="0.141176"/>
 </kw>
 <kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2024-04-30T12:48:26.818238" level="INFO">Clicking link 'Sampo Sihvola &amp; Antti Alanko - Kova kiire (2019)'.</msg>
+<msg time="2024-04-30T13:08:30.014805" level="INFO">Clicking link 'Sampo Sihvola &amp; Antti Alanko - Kova kiire (2019)'.</msg>
 <arg>Sampo Sihvola &amp; Antti Alanko - Kova kiire (2019)</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-30T12:48:26.817723" elapsed="0.136412"/>
+<status status="PASS" start="2024-04-30T13:08:30.013949" elapsed="0.114519"/>
 </kw>
 <kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2024-04-30T12:48:26.956164" level="INFO">Clicking link 'Kohteliaat pummit - Kortti vie, kortti tuo (2018)'.</msg>
+<msg time="2024-04-30T13:08:30.129977" level="INFO">Clicking link 'Kohteliaat pummit - Kortti vie, kortti tuo (2018)'.</msg>
 <arg>Kohteliaat pummit - Kortti vie, kortti tuo (2018)</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-30T12:48:26.955520" elapsed="0.171539"/>
+<status status="PASS" start="2024-04-30T13:08:30.129488" elapsed="0.166227"/>
 </kw>
 <kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2024-04-30T12:48:27.128011" level="INFO">Clicking link 'Kohteliaat pummit - Ei oo fyrkkaa (2017)'.</msg>
+<msg time="2024-04-30T13:08:30.299775" level="INFO">Clicking link 'Kohteliaat pummit - Ei oo fyrkkaa (2017)'.</msg>
 <arg>Kohteliaat pummit - Ei oo fyrkkaa (2017)</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-30T12:48:27.127588" elapsed="0.477218"/>
+<status status="PASS" start="2024-04-30T13:08:30.299293" elapsed="0.435982"/>
 </kw>
 <kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2024-04-30T12:48:27.606069" level="INFO">Clicking link 'Tenebris Locus - Meticulosa Allucinationes (2014)'.</msg>
+<msg time="2024-04-30T13:08:30.736580" level="INFO">Clicking link 'Tenebris Locus - Meticulosa Allucinationes (2014)'.</msg>
 <arg>Tenebris Locus - Meticulosa Allucinationes (2014)</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-30T12:48:27.605569" elapsed="0.584180"/>
+<status status="PASS" start="2024-04-30T13:08:30.736144" elapsed="0.595432"/>
 </kw>
 <kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2024-04-30T12:48:28.190812" level="INFO">Clicking link 'In The Time Of Water - Ennala Mixtape (2011)'.</msg>
+<msg time="2024-04-30T13:08:31.332450" level="INFO">Clicking link 'In The Time Of Water - Ennala Mixtape (2011)'.</msg>
 <arg>In The Time Of Water - Ennala Mixtape (2011)</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-30T12:48:28.190339" elapsed="0.315873"/>
+<status status="PASS" start="2024-04-30T13:08:31.332037" elapsed="0.547446"/>
 </kw>
 <kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2024-04-30T12:48:28.507480" level="INFO">Clicking link 'In The Time Of Water - untitled (2009)'.</msg>
+<msg time="2024-04-30T13:08:31.880430" level="INFO">Clicking link 'In The Time Of Water - untitled (2009)'.</msg>
 <arg>In The Time Of Water - untitled (2009)</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-30T12:48:28.506979" elapsed="0.361190"/>
+<status status="PASS" start="2024-04-30T13:08:31.880005" elapsed="0.457340"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-04-30T12:48:28.869043" elapsed="0.123833"/>
+<status status="PASS" start="2024-04-30T13:08:32.338019" elapsed="0.120870"/>
 </kw>
-<status status="PASS" start="2024-04-30T12:48:24.994027" elapsed="3.999474"/>
+<status status="PASS" start="2024-04-30T13:08:28.223896" elapsed="4.235333"/>
 </test>
 <test id="s1-t2" name="Check poetry links" line="16">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-04-30T12:48:28.995596" level="INFO">Opening browser 'chrome' to base url 'https://samposihvola.com'.</msg>
+<msg time="2024-04-30T13:08:32.460256" level="INFO">Opening browser 'chrome' to base url 'https://samposihvola.com'.</msg>
 <arg>url=https://samposihvola.com</arg>
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-04-30T12:48:28.995161" elapsed="1.255753"/>
+<status status="PASS" start="2024-04-30T13:08:32.459972" elapsed="1.195256"/>
 </kw>
 <kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2024-04-30T12:48:30.252047" level="INFO">Clicking link 'Irtikytkentöjä (2024)'.</msg>
+<msg time="2024-04-30T13:08:33.656171" level="INFO">Clicking link 'Irtikytkentöjä (2024)'.</msg>
 <arg>Irtikytkentöjä (2024)</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-30T12:48:30.251561" elapsed="0.130389"/>
+<status status="PASS" start="2024-04-30T13:08:33.655752" elapsed="0.107357"/>
 </kw>
 <kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2024-04-30T12:48:30.383087" level="INFO">Clicking link 'don't come into my territory (2023)'.</msg>
+<msg time="2024-04-30T13:08:33.764115" level="INFO">Clicking link 'don't come into my territory (2023)'.</msg>
 <arg>don't come into my territory (2023)</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-30T12:48:30.382523" elapsed="0.109002"/>
+<status status="PASS" start="2024-04-30T13:08:33.763600" elapsed="0.099338"/>
 </kw>
 <kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2024-04-30T12:48:30.492729" level="INFO">Clicking link 'toisinaan meillä (2022)'.</msg>
+<msg time="2024-04-30T13:08:33.864550" level="INFO">Clicking link 'toisinaan meillä (2022)'.</msg>
 <arg>toisinaan meillä (2022)</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-30T12:48:30.492170" elapsed="0.108152"/>
+<status status="PASS" start="2024-04-30T13:08:33.864026" elapsed="0.109547"/>
 </kw>
 <kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2024-04-30T12:48:30.601753" level="INFO">Clicking link 'Stagnaatio (2021)'.</msg>
+<msg time="2024-04-30T13:08:33.974709" level="INFO">Clicking link 'Stagnaatio (2021)'.</msg>
 <arg>Stagnaatio (2021)</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-30T12:48:30.601215" elapsed="0.110984"/>
+<status status="PASS" start="2024-04-30T13:08:33.974194" elapsed="0.104959"/>
 </kw>
 <kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2024-04-30T12:48:30.713414" level="INFO">Clicking link 'Hankalat tuhatvuotiset reitit (2020)'.</msg>
+<msg time="2024-04-30T13:08:34.080198" level="INFO">Clicking link 'Hankalat tuhatvuotiset reitit (2020)'.</msg>
 <arg>Hankalat tuhatvuotiset reitit (2020)</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-30T12:48:30.712890" elapsed="0.118946"/>
+<status status="PASS" start="2024-04-30T13:08:34.079714" elapsed="0.111124"/>
 </kw>
 <kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2024-04-30T12:48:30.832969" level="INFO">Clicking link 'no healthy upstream (2020)'.</msg>
+<msg time="2024-04-30T13:08:34.191912" level="INFO">Clicking link 'no healthy upstream (2020)'.</msg>
 <arg>no healthy upstream (2020)</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-30T12:48:30.832532" elapsed="0.108978"/>
+<status status="PASS" start="2024-04-30T13:08:34.191379" elapsed="0.114372"/>
 </kw>
 <kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2024-04-30T12:48:30.943138" level="INFO">Clicking link 'Kaupunkimetsät (2019)'.</msg>
+<msg time="2024-04-30T13:08:34.306949" level="INFO">Clicking link 'Kaupunkimetsät (2019)'.</msg>
 <arg>Kaupunkimetsät (2019)</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-30T12:48:30.942259" elapsed="0.113710"/>
+<status status="PASS" start="2024-04-30T13:08:34.306335" elapsed="0.106699"/>
 </kw>
 <kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2024-04-30T12:48:31.057155" level="INFO">Clicking link 'Sampo Sihvola on kovassa nosteessa (2019)'.</msg>
+<msg time="2024-04-30T13:08:34.414027" level="INFO">Clicking link 'Sampo Sihvola on kovassa nosteessa (2019)'.</msg>
 <arg>Sampo Sihvola on kovassa nosteessa (2019)</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-30T12:48:31.056657" elapsed="0.108005"/>
+<status status="PASS" start="2024-04-30T13:08:34.413586" elapsed="0.112311"/>
 </kw>
 <kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2024-04-30T12:48:31.166387" level="INFO">Clicking link 'Pihalla on 3d-tulostin (2019)'.</msg>
+<msg time="2024-04-30T13:08:34.527152" level="INFO">Clicking link 'Pihalla on 3d-tulostin (2019)'.</msg>
 <arg>Pihalla on 3d-tulostin (2019)</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-30T12:48:31.165879" elapsed="0.142964"/>
+<status status="PASS" start="2024-04-30T13:08:34.526701" elapsed="0.148880"/>
 </kw>
 <kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2024-04-30T12:48:31.310074" level="INFO">Clicking link 'Syystihku (2013)'.</msg>
+<msg time="2024-04-30T13:08:34.677532" level="INFO">Clicking link 'Syystihku (2013)'.</msg>
 <arg>Syystihku (2013)</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-30T12:48:31.309571" elapsed="0.112051"/>
+<status status="PASS" start="2024-04-30T13:08:34.677040" elapsed="0.129490"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-04-30T12:48:31.422340" elapsed="0.083984"/>
+<status status="PASS" start="2024-04-30T13:08:34.807344" elapsed="1.076721"/>
 </kw>
-<status status="PASS" start="2024-04-30T12:48:28.994220" elapsed="2.512456"/>
+<status status="PASS" start="2024-04-30T13:08:32.459536" elapsed="3.425547"/>
 </test>
 <test id="s1-t3" name="Check video links" line="30">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-04-30T12:48:31.507904" level="INFO">Opening browser 'chrome' to base url 'https://samposihvola.com'.</msg>
+<msg time="2024-04-30T13:08:35.888579" level="INFO">Opening browser 'chrome' to base url 'https://samposihvola.com'.</msg>
 <arg>url=https://samposihvola.com</arg>
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-04-30T12:48:31.507509" elapsed="1.182711"/>
+<status status="PASS" start="2024-04-30T13:08:35.888206" elapsed="1.167571"/>
 </kw>
 <kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2024-04-30T12:48:32.691216" level="INFO">Clicking link 'Circle of Light (2024)'.</msg>
+<msg time="2024-04-30T13:08:37.057126" level="INFO">Clicking link 'Circle of Light (2024)'.</msg>
 <arg>Circle of Light (2024)</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-30T12:48:32.690704" elapsed="0.115523"/>
+<status status="PASS" start="2024-04-30T13:08:37.056464" elapsed="0.114011"/>
 </kw>
 <kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2024-04-30T12:48:32.810240" level="INFO">Clicking link 'Hannunniitty (2021)'.</msg>
+<msg time="2024-04-30T13:08:37.174762" level="INFO">Clicking link 'Hannunniitty (2021)'.</msg>
 <arg>Hannunniitty (2021)</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-30T12:48:32.807035" elapsed="0.138676"/>
+<status status="PASS" start="2024-04-30T13:08:37.171171" elapsed="0.147042"/>
 </kw>
 <kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2024-04-30T12:48:32.946962" level="INFO">Clicking link 'Alallaan palkittu (2020)'.</msg>
+<msg time="2024-04-30T13:08:37.320220" level="INFO">Clicking link 'Alallaan palkittu (2020)'.</msg>
 <arg>Alallaan palkittu (2020)</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-30T12:48:32.946407" elapsed="0.330614"/>
+<status status="PASS" start="2024-04-30T13:08:37.319757" elapsed="0.304814"/>
 </kw>
 <kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2024-04-30T12:48:33.278306" level="INFO">Clicking link 'guitar performance (2020)'.</msg>
+<msg time="2024-04-30T13:08:37.625560" level="INFO">Clicking link 'guitar performance (2020)'.</msg>
 <arg>guitar performance (2020)</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-30T12:48:33.277939" elapsed="0.457962"/>
+<status status="PASS" start="2024-04-30T13:08:37.625180" elapsed="0.412850"/>
 </kw>
 <kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2024-04-30T12:48:33.736784" level="INFO">Clicking link 'IKIKIKYNYKYTYKY-klubi live (2019)'.</msg>
+<msg time="2024-04-30T13:08:38.039658" level="INFO">Clicking link 'IKIKIKYNYKYTYKY-klubi live (2019)'.</msg>
 <arg>IKIKIKYNYKYTYKY-klubi live (2019)</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-30T12:48:33.736371" elapsed="0.527147"/>
+<status status="PASS" start="2024-04-30T13:08:38.039242" elapsed="0.580576"/>
 </kw>
 <kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2024-04-30T12:48:34.264447" level="INFO">Clicking link 'Kansanrunoutta pizzauunin luota (2015)'.</msg>
+<msg time="2024-04-30T13:08:38.620712" level="INFO">Clicking link 'Kansanrunoutta pizzauunin luota (2015)'.</msg>
 <arg>Kansanrunoutta pizzauunin luota (2015)</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-30T12:48:34.263991" elapsed="0.648486"/>
+<status status="PASS" start="2024-04-30T13:08:38.620332" elapsed="0.577616"/>
 </kw>
 <kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2024-04-30T12:48:34.913648" level="INFO">Clicking link 'Hymyilevä Apollo @ Sture 21 (2014)'.</msg>
+<msg time="2024-04-30T13:08:39.198860" level="INFO">Clicking link 'Hymyilevä Apollo @ Sture 21 (2014)'.</msg>
 <arg>Hymyilevä Apollo @ Sture 21 (2014)</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-30T12:48:34.913154" elapsed="0.715161"/>
+<status status="PASS" start="2024-04-30T13:08:39.198429" elapsed="0.545921"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-04-30T12:48:35.629003" elapsed="0.132000"/>
+<status status="PASS" start="2024-04-30T13:08:39.744874" elapsed="0.133153"/>
 </kw>
-<status status="PASS" start="2024-04-30T12:48:31.507001" elapsed="4.254500"/>
+<status status="PASS" start="2024-04-30T13:08:35.886327" elapsed="3.992171"/>
 </test>
-<status status="PASS" start="2024-04-30T12:48:24.837534" elapsed="10.925311"/>
+<status status="PASS" start="2024-04-30T13:08:28.074920" elapsed="11.804399"/>
 </suite>
 <statistics>
 <total>
