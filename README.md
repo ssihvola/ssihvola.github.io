@@ -9,7 +9,7 @@ Install Robot Framework & Youtube-dl.
 Create video backups
 
 ```bash
-bash backups.sh
+cd tests-and-scripts && bash backups.sh
 ```
 
 Test all the links 
