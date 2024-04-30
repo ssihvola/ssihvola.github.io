@@ -4,9 +4,9 @@ The source code of my home page.
 
 # Instructions
 
-Install Robot Framework & Youtube-dl.
+Install Robot Framework & youtube-dl.
 
-Create video backups
+Create backups with youtube-dl
 
 ```bash
 cd tests-and-scripts && bash backups.sh

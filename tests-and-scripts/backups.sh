@@ -1,4 +1,4 @@
-# Youtube-dl scripts for local backups
+# youtube-dl scripts for local backups
 
 # Check links with Robot Framework
 robot links.robot
