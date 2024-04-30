@@ -15,6 +15,8 @@ Check music links
 
 Check poetry links
 	  Open Browser   url=https://samposihvola.com   browser=chrome
+		Click Link   Irtikytkentöjä (2024)
+		Click Link   don't come into my territory (2023)
 		Click Link   toisinaan meillä (2022)
 		Click Link   Stagnaatio (2021)
 		Click Link   Hankalat tuhatvuotiset reitit (2020)
