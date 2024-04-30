@@ -7,14 +7,11 @@ robot links.robot
 if [ $? -eq 0 ]; then
     # If all the links work (videos are still online) proceed with yt-dlp scripts
     
-    # Change directory to Desktop
     cd ~/Desktop || exit
     
-    # Create directory for backups
     mkdir -p samposihvola.com-backups
     cd samposihvola.com-backups || exit
-    
-    # Execute yt-dlp scripts
+
     yt-dlp -f mp4 http://www.youtube.com/watch?v=0nocNhXxzyk &&
     yt-dlp -f mp4 http://www.youtube.com/watch?v=Sx6T6C8DdgM &&
     yt-dlp -f mp4 http://www.youtube.com/watch?v=jcMtjnSVI0Y &&
