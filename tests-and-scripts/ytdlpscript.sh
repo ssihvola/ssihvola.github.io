@@ -1,5 +1,9 @@
 # Youtube-dl scripts for local backups
 
+cd &&
+cd Desktop &&
+mkdir samposihvola.com-backups && 
+cd samposihvola.com-backups &&
 yt-dlp -f mp4 http://www.youtube.com/watch?v=0nocNhXxzyk &&
 yt-dlp -f mp4 http://www.youtube.com/watch?v=Sx6T6C8DdgM &&
 yt-dlp -f mp4 http://www.youtube.com/watch?v=jcMtjnSVI0Y &&
