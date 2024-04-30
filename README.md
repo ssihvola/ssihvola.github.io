@@ -2,6 +2,28 @@
 
 The source code of my home page. 
 
+# Instructions
+
+Install Robot Framework & Youtube-dl.
+
+Create video backups
+
+```bash
+bash backups.sh
+```
+
+Test all the links 
+
+```bash
+cd tests-and-scripts && robot links.robot
+```
+
+Test the contact form
+
+```bash
+cd tests-and-scripts && robot form.robot
+```
+
 # To do / current projects
 
 - Dec 2020 - Jan 2021 visual poems: select & photograph the best
