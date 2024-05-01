@@ -26,6 +26,7 @@ cd tests-and-scripts && robot form.robot
 
 # To do / current projects
 
+- Link tests should validate that the content is actually still online
 - Dec 2020 - Jan 2021 visual poems: select & photograph the best
 - Kesäjuhlat cassette rip
 - Ieskadulla cassette mastering & dubbing
