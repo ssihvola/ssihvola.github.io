@@ -4,32 +4,23 @@ The source code of my home page.
 
 # Instructions
 
-Install Robot Framework & youtube-dl & .
+Install Robot Framework & youtube-dl & Google Chrome.
 
 Create backups with youtube-dl
 
 ```bash
-cd tests-and-scripts && bash backups.sh && cd ..
+cd scripts && bash backups.sh && cd ..
 ```
 
-Test all the links 
+Run all tests
 
 ```bash
-cd tests-and-scripts && robot links.robot
-```
-
-Test the contact form
-
-```bash
-cd tests-and-scripts && robot form.robot
+cd tests && robot links.robot && robot form.robot && cd ..
 ```
 
 # To do / current projects
 
-- Link tests should validate that the content is actually still online
-- Dec 2020 - Jan 2021 visual poems: select & photograph the best
-- Kesäjuhlat cassette rip
-- Ieskadulla cassette mastering & dubbing
+- Ieskadulla cassette dubbing
 - In The Time Of Water comeback
 - Portfolio
 

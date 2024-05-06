@@ -1,162 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.10.12 on linux)" generated="2024-05-06T13:22:14.746866" rpa="false" schemaversion="5">
-<suite id="s1" name="Links" source="/home/ssihvola/Desktop/ssihvola.github.io/tests/links.robot">
-<kw name="Set Log Level" owner="BuiltIn" type="SETUP">
-<arg>INFO</arg>
-<doc>Sets the log threshold to the specified level.</doc>
-<status status="PASS" start="2024-05-06T13:22:14.894076" elapsed="0.000339"/>
-</kw>
-<test id="s1-t1" name="Check poetry links" line="25">
-<kw name="Check Poem">
+<robot generator="Robot 7.0 (Python 3.10.12 on linux)" generated="2024-05-06T13:29:24.516558" rpa="false" schemaversion="5">
+<suite id="s1" name="Form" source="/home/ssihvola/Desktop/ssihvola.github.io/tests/form.robot">
+<test id="s1-t1" name="Contact form works" line="5">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-05-06T13:22:14.895887" level="INFO">Opening browser 'chrome' to base url 'https://samposihvola.com'.</msg>
+<msg time="2024-05-06T13:29:24.668335" level="INFO">Opening browser 'chrome' to base url 'https://samposihvola.com'.</msg>
 <arg>url=https://samposihvola.com</arg>
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-05-06T13:22:14.895617" elapsed="1.248455"/>
+<status status="PASS" start="2024-05-06T13:29:24.667999" elapsed="1.244925"/>
 </kw>
-<kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2024-05-06T13:22:16.147558" level="INFO">Clicking link 'Irtikytkentöjä (2024)'.</msg>
-<arg>${poem_title}</arg>
-<doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-06T13:22:16.145103" elapsed="0.144953"/>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-06T13:29:25.914989" level="INFO">Typing text 'testi' into text field 'name'.</msg>
+<arg>name</arg>
+<arg>testi</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-06T13:29:25.913824" elapsed="0.162451"/>
 </kw>
-<kw name="Switch Window" owner="SeleniumLibrary">
-<msg time="2024-05-06T13:22:16.310590" level="INFO">${current_window} = 578850AC31567A4C93001754ABF6570C</msg>
-<var>${current_window}</var>
-<arg>NEW</arg>
-<doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" start="2024-05-06T13:22:16.290494" elapsed="0.020181"/>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-06T13:29:26.077101" level="INFO">Typing text 'testi@testi.com' into text field 'email'.</msg>
+<arg>email</arg>
+<arg>testi@testi.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-06T13:29:26.076631" elapsed="0.112417"/>
 </kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-05-06T13:22:16.311626" level="INFO">${title_array} = ['Irtikytkentöjä', '(2024)']</msg>
-<var>${title_array}</var>
-<arg>'${poem_title}'.split(' ')</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-05-06T13:22:16.311024" elapsed="0.000678"/>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-06T13:29:26.190049" level="INFO">Typing text '"hello"' into text field 'message'.</msg>
+<arg>message</arg>
+<arg>"hello"</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-06T13:29:26.189599" elapsed="0.095935"/>
 </kw>
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-05-06T13:22:16.313122" level="INFO">${first_word} = Irtikytkentöjä</msg>
-<var>${first_word}</var>
-<arg>${title_array[0]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-05-06T13:22:16.311998" elapsed="0.001184"/>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-06T13:29:26.286445" level="INFO">Clicking element 'xpath=//button[text()='Send']'.</msg>
+<arg>xpath=//button[text()='Send']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-06T13:29:26.285971" elapsed="1.104227"/>
 </kw>
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>xpath=//title[contains(text(), '${first_word}')]</arg>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Formspree</arg>
 <arg>timeout=10s</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2024-05-06T13:22:16.313436" elapsed="0.082523"/>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-05-06T13:29:27.390803" elapsed="0.042475"/>
 </kw>
-<kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-05-06T13:22:16.408084" level="INFO">Current page contains element 'xpath=//title[contains(text(), 'Irtikytkentöjä')]'.</msg>
-<arg>xpath=//title[contains(text(), '${first_word}')]</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-05-06T13:22:16.396216" elapsed="0.012054"/>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-05-06T13:29:27.447703" level="INFO">Current page contains text 'Formspree'.</msg>
+<arg>Formspree</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-05-06T13:29:27.433618" elapsed="0.014219"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-05-06T13:22:16.408584" elapsed="0.067148"/>
+<status status="PASS" start="2024-05-06T13:29:27.448174" elapsed="0.071005"/>
 </kw>
-<arg>Irtikytkentöjä (2024)</arg>
-<status status="PASS" start="2024-05-06T13:22:14.895124" elapsed="1.580781"/>
-</kw>
-<kw name="Check Poem">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-05-06T13:22:16.476977" level="INFO">Opening browser 'chrome' to base url 'https://samposihvola.com'.</msg>
-<arg>url=https://samposihvola.com</arg>
-<arg>browser=chrome</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-05-06T13:22:16.476711" elapsed="1.217077"/>
-</kw>
-<kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2024-05-06T13:22:17.694867" level="INFO">Clicking link 'don't come into my territory (2023)'.</msg>
-<arg>${poem_title}</arg>
-<doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-06T13:22:17.694242" elapsed="0.108228"/>
-</kw>
-<kw name="Switch Window" owner="SeleniumLibrary">
-<msg time="2024-05-06T13:22:17.828876" level="INFO">${current_window} = D247B59CC4B4201ABE102C48F9CCFBA5</msg>
-<var>${current_window}</var>
-<arg>NEW</arg>
-<doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" start="2024-05-06T13:22:17.804051" elapsed="0.024906"/>
-</kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-05-06T13:22:17.829745" level="FAIL">Evaluating expression "'don't come into my territory (2023)'.split(' ')" failed: SyntaxError: unterminated string literal (detected at line 1) (&lt;string&gt;, line 1)</msg>
-<var>${title_array}</var>
-<arg>'${poem_title}'.split(' ')</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="FAIL" start="2024-05-06T13:22:17.829258" elapsed="0.000655">Evaluating expression "'don't come into my territory (2023)'.split(' ')" failed: SyntaxError: unterminated string literal (detected at line 1) (&lt;string&gt;, line 1)</status>
-</kw>
-<kw name="Set Variable" owner="BuiltIn">
-<var>${first_word}</var>
-<arg>${title_array[0]}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2024-05-06T13:22:17.830184" elapsed="0.000055"/>
-</kw>
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>xpath=//title[contains(text(), '${first_word}')]</arg>
-<arg>timeout=10s</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="NOT RUN" start="2024-05-06T13:22:17.830465" elapsed="0.000054"/>
-</kw>
-<kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<arg>xpath=//title[contains(text(), '${first_word}')]</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="NOT RUN" start="2024-05-06T13:22:17.830742" elapsed="0.000051"/>
-</kw>
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2024-05-06T13:22:17.830983" elapsed="0.000048"/>
-</kw>
-<arg>don't come into my territory (2023)</arg>
-<status status="FAIL" start="2024-05-06T13:22:16.476269" elapsed="1.354957">Evaluating expression "'don't come into my territory (2023)'.split(' ')" failed: SyntaxError: unterminated string literal (detected at line 1) (&lt;string&gt;, line 1)</status>
-</kw>
-<kw name="Check Poem">
-<arg>toisinaan meillä (2022)</arg>
-<status status="NOT RUN" start="2024-05-06T13:22:17.831698" elapsed="0.000067"/>
-</kw>
-<kw name="Check Poem">
-<arg>Stagnaatio (2021)</arg>
-<status status="NOT RUN" start="2024-05-06T13:22:17.832156" elapsed="0.000063"/>
-</kw>
-<kw name="Check Poem">
-<arg>Hankalat tuhatvuotiset reitit (2020)</arg>
-<status status="NOT RUN" start="2024-05-06T13:22:17.832591" elapsed="0.000055"/>
-</kw>
-<kw name="Check Poem">
-<arg>no healthy upstream (2020)</arg>
-<status status="NOT RUN" start="2024-05-06T13:22:17.833003" elapsed="0.000053"/>
-</kw>
-<kw name="Check Poem">
-<arg>Kaupunkimetsät (2019)</arg>
-<status status="NOT RUN" start="2024-05-06T13:22:17.833452" elapsed="0.000061"/>
-</kw>
-<kw name="Check Poem">
-<arg>Sampo Sihvola on kovassa nosteessa (2019)</arg>
-<status status="NOT RUN" start="2024-05-06T13:22:17.833942" elapsed="0.000059"/>
-</kw>
-<kw name="Check Poem">
-<arg>Pihalla on 3d-tulostin (2019)</arg>
-<status status="NOT RUN" start="2024-05-06T13:22:17.834382" elapsed="0.000055"/>
-</kw>
-<kw name="Check Poem">
-<arg>Syystihku (2013)</arg>
-<status status="NOT RUN" start="2024-05-06T13:22:17.834889" elapsed="0.000093"/>
-</kw>
-<status status="FAIL" start="2024-05-06T13:22:14.894585" elapsed="2.940928">Evaluating expression "'don't come into my territory (2023)'.split(' ')" failed: SyntaxError: unterminated string literal (detected at line 1) (&lt;string&gt;, line 1)</status>
+<status status="PASS" start="2024-05-06T13:29:24.666933" elapsed="2.852634"/>
 </test>
-<status status="FAIL" start="2024-05-06T13:22:14.748010" elapsed="3.088436"/>
+<status status="PASS" start="2024-05-06T13:29:24.517623" elapsed="3.002762"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Links">Links</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Form">Form</stat>
 </suite>
 </statistics>
 <errors>

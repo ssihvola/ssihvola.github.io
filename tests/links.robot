@@ -24,7 +24,7 @@ Check video links
 
 Check poetry links
 		Check Poem   Irtikytkentöjä (2024)
-		Check Poem   don't come into my territory (2023)
+		Check Poem   my territory (2023)
 		Check Poem   toisinaan meillä (2022)
 		Check Poem   Stagnaatio (2021)
 		Check Poem   Hankalat tuhatvuotiset reitit (2020)
@@ -52,6 +52,8 @@ Check Poem
     ${current_window}   Switch Window   NEW
     ${title_array}=   Evaluate   '${poem_title}'.split(' ')
     ${first_word}=   Set Variable   ${title_array[0]}
-    Wait Until Page Contains Element   xpath=//title[contains(text(), '${first_word}')]   timeout=10s
-    Page Should Contain Element   xpath=//title[contains(text(), '${first_word}')]
+    Wait Until Page Contains Element   
+		...    xpath=//title[contains(text(), '${first_word}')]   timeout=10s
+    Page Should Contain Element   
+		...    xpath=//title[contains(text(), '${first_word}')]
     Close Browser
