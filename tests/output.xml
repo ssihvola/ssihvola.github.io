@@ -1,211 +1,153 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.10.12 on linux)" generated="2024-05-06T13:14:13.320701" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.10.12 on linux)" generated="2024-05-06T13:22:14.746866" rpa="false" schemaversion="5">
 <suite id="s1" name="Links" source="/home/ssihvola/Desktop/ssihvola.github.io/tests/links.robot">
 <kw name="Set Log Level" owner="BuiltIn" type="SETUP">
 <arg>INFO</arg>
 <doc>Sets the log threshold to the specified level.</doc>
-<status status="PASS" start="2024-05-06T13:14:13.502057" elapsed="0.000339"/>
+<status status="PASS" start="2024-05-06T13:22:14.894076" elapsed="0.000339"/>
 </kw>
 <test id="s1-t1" name="Check poetry links" line="25">
 <kw name="Check Poem">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-05-06T13:14:13.503884" level="INFO">Opening browser 'chrome' to base url 'https://samposihvola.com'.</msg>
+<msg time="2024-05-06T13:22:14.895887" level="INFO">Opening browser 'chrome' to base url 'https://samposihvola.com'.</msg>
 <arg>url=https://samposihvola.com</arg>
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-05-06T13:14:13.503625" elapsed="2.943597"/>
+<status status="PASS" start="2024-05-06T13:22:14.895617" elapsed="1.248455"/>
 </kw>
 <kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2024-05-06T13:14:16.448758" level="INFO">Clicking link 'Irtikytkentöjä (2024)'.</msg>
+<msg time="2024-05-06T13:22:16.147558" level="INFO">Clicking link 'Irtikytkentöjä (2024)'.</msg>
 <arg>${poem_title}</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-06T13:14:16.447812" elapsed="0.203542"/>
+<status status="PASS" start="2024-05-06T13:22:16.145103" elapsed="0.144953"/>
 </kw>
 <kw name="Switch Window" owner="SeleniumLibrary">
-<msg time="2024-05-06T13:14:16.700145" level="INFO">${current_window} = C3EF4A9C77F3EE263850757D0D188D4E</msg>
+<msg time="2024-05-06T13:22:16.310590" level="INFO">${current_window} = 578850AC31567A4C93001754ABF6570C</msg>
 <var>${current_window}</var>
 <arg>NEW</arg>
 <doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" start="2024-05-06T13:14:16.651748" elapsed="0.048489"/>
+<status status="PASS" start="2024-05-06T13:22:16.290494" elapsed="0.020181"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-05-06T13:14:16.701225" level="INFO">${title_array} = ['Irtikytkentöjä', '(2024)']</msg>
+<msg time="2024-05-06T13:22:16.311626" level="INFO">${title_array} = ['Irtikytkentöjä', '(2024)']</msg>
 <var>${title_array}</var>
 <arg>'${poem_title}'.split(' ')</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-05-06T13:14:16.700645" elapsed="0.000644"/>
+<status status="PASS" start="2024-05-06T13:22:16.311024" elapsed="0.000678"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-05-06T13:14:16.702676" level="INFO">${first_word} = Irtikytkentöjä</msg>
+<msg time="2024-05-06T13:22:16.313122" level="INFO">${first_word} = Irtikytkentöjä</msg>
 <var>${first_word}</var>
 <arg>${title_array[0]}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-05-06T13:14:16.701571" elapsed="0.001156"/>
+<status status="PASS" start="2024-05-06T13:22:16.311998" elapsed="0.001184"/>
 </kw>
 <kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<msg time="2024-05-06T13:14:26.719546" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=124.0.6367.91)
-Stacktrace:
-#0 0x5946801c1cb3 &lt;unknown&gt;
-#1 0x59467feb04a7 &lt;unknown&gt;
-#2 0x59467fe86b3e &lt;unknown&gt;
-#3 0x59467ff256cd &lt;unknown&gt;
-#4 0x59467ff3b576 &lt;unknown&gt;
-#5 0x59467ff1d1b3 &lt;unknown&gt;
-#6 0x59467feee24a &lt;unknown&gt;
-#7 0x59467feeec1e &lt;unknown&gt;
-#8 0x594680185fdb &lt;unknown&gt;
-#9 0x594680189f2b &lt;unknown&gt;
-#10 0x5946801720f1 &lt;unknown&gt;
-#11 0x59468018aa92 &lt;unknown&gt;
-#12 0x594680156faf &lt;unknown&gt;
-#13 0x5946801b0e08 &lt;unknown&gt;
-#14 0x5946801b0fe0 &lt;unknown&gt;
-#15 0x5946801c0e04 &lt;unknown&gt;
-#16 0x729b9d494ac3 &lt;unknown&gt;
-</msg>
-<msg time="2024-05-06T13:14:26.719985" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=124.0.6367.91)
-Stacktrace:
-#0 0x5946801c1cb3 &lt;unknown&gt;
-#1 0x59467feb04a7 &lt;unknown&gt;
-#2 0x59467fe86b3e &lt;unknown&gt;
-#3 0x59467ff256cd &lt;unknown&gt;
-#4 0x59467ff3b576 &lt;unknown&gt;
-#5 0x59467ff1d1b3 &lt;unknown&gt;
-#6 0x59467feee24a &lt;unknown&gt;
-#7 0x59467feeec1e &lt;unknown&gt;
-#8 0x594680185fdb &lt;unknown&gt;
-#9 0x594680189f2b &lt;unknown&gt;
-#10 0x5946801720f1 &lt;unknown&gt;
-#11 0x59468018aa92 &lt;unknown&gt;
-#12 0x594680156faf &lt;unknown&gt;
-#13 0x5946801b0e08 &lt;unknown&gt;
-#14 0x5946801b0fe0 &lt;unknown&gt;
-#15 0x5946801c0e04 &lt;unknown&gt;
-#16 0x729b9d494ac3 &lt;unknown&gt;
-</msg>
 <arg>xpath=//title[contains(text(), '${first_word}')]</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="FAIL" start="2024-05-06T13:14:16.702913" elapsed="10.019772">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=124.0.6367.91)
-Stacktrace:
-#0 0x5946801c1cb3 &lt;unknown&gt;
-#1 0x59467feb04a7 &lt;unknown&gt;
-#2 0x59467fe86b3e &lt;unknown&gt;
-#3 0x59467ff256cd &lt;unknown&gt;
-#4 0x59467ff3b576 &lt;unknown&gt;
-#5 0x59467ff1d1b3 &lt;unknown&gt;
-#6 0x59467feee24a &lt;unknown&gt;
-#7 0x59467feeec1e &lt;unknown&gt;
-#8 0x594680185fdb &lt;unknown&gt;
-#9 0x594680189f2b &lt;unknown&gt;
-#10 0x5946801720f1 &lt;unknown&gt;
-#11 0x59468018aa92 &lt;unknown&gt;
-#12 0x594680156faf &lt;unknown&gt;
-#13 0x5946801b0e08 &lt;unknown&gt;
-#14 0x5946801b0fe0 &lt;unknown&gt;
-#15 0x5946801c0e04 &lt;unknown&gt;
-#16 0x729b9d494ac3 &lt;unknown&gt;
-</status>
+<status status="PASS" start="2024-05-06T13:22:16.313436" elapsed="0.082523"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-06T13:22:16.408084" level="INFO">Current page contains element 'xpath=//title[contains(text(), 'Irtikytkentöjä')]'.</msg>
+<arg>xpath=//title[contains(text(), '${first_word}')]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-06T13:22:16.396216" elapsed="0.012054"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-06T13:22:16.408584" elapsed="0.067148"/>
+</kw>
+<arg>Irtikytkentöjä (2024)</arg>
+<status status="PASS" start="2024-05-06T13:22:14.895124" elapsed="1.580781"/>
+</kw>
+<kw name="Check Poem">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-06T13:22:16.476977" level="INFO">Opening browser 'chrome' to base url 'https://samposihvola.com'.</msg>
+<arg>url=https://samposihvola.com</arg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-06T13:22:16.476711" elapsed="1.217077"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-06T13:22:17.694867" level="INFO">Clicking link 'don't come into my territory (2023)'.</msg>
+<arg>${poem_title}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-06T13:22:17.694242" elapsed="0.108228"/>
+</kw>
+<kw name="Switch Window" owner="SeleniumLibrary">
+<msg time="2024-05-06T13:22:17.828876" level="INFO">${current_window} = D247B59CC4B4201ABE102C48F9CCFBA5</msg>
+<var>${current_window}</var>
+<arg>NEW</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" start="2024-05-06T13:22:17.804051" elapsed="0.024906"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-05-06T13:22:17.829745" level="FAIL">Evaluating expression "'don't come into my territory (2023)'.split(' ')" failed: SyntaxError: unterminated string literal (detected at line 1) (&lt;string&gt;, line 1)</msg>
+<var>${title_array}</var>
+<arg>'${poem_title}'.split(' ')</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="FAIL" start="2024-05-06T13:22:17.829258" elapsed="0.000655">Evaluating expression "'don't come into my territory (2023)'.split(' ')" failed: SyntaxError: unterminated string literal (detected at line 1) (&lt;string&gt;, line 1)</status>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<var>${first_word}</var>
+<arg>${title_array[0]}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2024-05-06T13:22:17.830184" elapsed="0.000055"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>xpath=//title[contains(text(), '${first_word}')]</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" start="2024-05-06T13:22:17.830465" elapsed="0.000054"/>
 </kw>
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
 <arg>xpath=//title[contains(text(), '${first_word}')]</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="NOT RUN" start="2024-05-06T13:14:26.723067" elapsed="0.000062"/>
+<status status="NOT RUN" start="2024-05-06T13:22:17.830742" elapsed="0.000051"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2024-05-06T13:14:26.723331" elapsed="0.000050"/>
+<status status="NOT RUN" start="2024-05-06T13:22:17.830983" elapsed="0.000048"/>
 </kw>
-<arg>Irtikytkentöjä (2024)</arg>
-<status status="FAIL" start="2024-05-06T13:14:13.503122" elapsed="13.220519">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=124.0.6367.91)
-Stacktrace:
-#0 0x5946801c1cb3 &lt;unknown&gt;
-#1 0x59467feb04a7 &lt;unknown&gt;
-#2 0x59467fe86b3e &lt;unknown&gt;
-#3 0x59467ff256cd &lt;unknown&gt;
-#4 0x59467ff3b576 &lt;unknown&gt;
-#5 0x59467ff1d1b3 &lt;unknown&gt;
-#6 0x59467feee24a &lt;unknown&gt;
-#7 0x59467feeec1e &lt;unknown&gt;
-#8 0x594680185fdb &lt;unknown&gt;
-#9 0x594680189f2b &lt;unknown&gt;
-#10 0x5946801720f1 &lt;unknown&gt;
-#11 0x59468018aa92 &lt;unknown&gt;
-#12 0x594680156faf &lt;unknown&gt;
-#13 0x5946801b0e08 &lt;unknown&gt;
-#14 0x5946801b0fe0 &lt;unknown&gt;
-#15 0x5946801c0e04 &lt;unknown&gt;
-#16 0x729b9d494ac3 &lt;unknown&gt;
-</status>
-</kw>
-<kw name="Check Poem">
 <arg>don't come into my territory (2023)</arg>
-<status status="NOT RUN" start="2024-05-06T13:14:26.724269" elapsed="0.000125"/>
+<status status="FAIL" start="2024-05-06T13:22:16.476269" elapsed="1.354957">Evaluating expression "'don't come into my territory (2023)'.split(' ')" failed: SyntaxError: unterminated string literal (detected at line 1) (&lt;string&gt;, line 1)</status>
 </kw>
 <kw name="Check Poem">
 <arg>toisinaan meillä (2022)</arg>
-<status status="NOT RUN" start="2024-05-06T13:14:26.724928" elapsed="0.000097"/>
+<status status="NOT RUN" start="2024-05-06T13:22:17.831698" elapsed="0.000067"/>
 </kw>
 <kw name="Check Poem">
 <arg>Stagnaatio (2021)</arg>
-<status status="NOT RUN" start="2024-05-06T13:14:26.725594" elapsed="0.000094"/>
+<status status="NOT RUN" start="2024-05-06T13:22:17.832156" elapsed="0.000063"/>
 </kw>
 <kw name="Check Poem">
 <arg>Hankalat tuhatvuotiset reitit (2020)</arg>
-<status status="NOT RUN" start="2024-05-06T13:14:26.726212" elapsed="0.000082"/>
+<status status="NOT RUN" start="2024-05-06T13:22:17.832591" elapsed="0.000055"/>
 </kw>
 <kw name="Check Poem">
 <arg>no healthy upstream (2020)</arg>
-<status status="NOT RUN" start="2024-05-06T13:14:26.726843" elapsed="0.000086"/>
+<status status="NOT RUN" start="2024-05-06T13:22:17.833003" elapsed="0.000053"/>
 </kw>
 <kw name="Check Poem">
 <arg>Kaupunkimetsät (2019)</arg>
-<status status="NOT RUN" start="2024-05-06T13:14:26.727370" elapsed="0.000077"/>
+<status status="NOT RUN" start="2024-05-06T13:22:17.833452" elapsed="0.000061"/>
 </kw>
 <kw name="Check Poem">
 <arg>Sampo Sihvola on kovassa nosteessa (2019)</arg>
-<status status="NOT RUN" start="2024-05-06T13:14:26.728208" elapsed="0.000061"/>
+<status status="NOT RUN" start="2024-05-06T13:22:17.833942" elapsed="0.000059"/>
 </kw>
 <kw name="Check Poem">
 <arg>Pihalla on 3d-tulostin (2019)</arg>
-<status status="NOT RUN" start="2024-05-06T13:14:26.728543" elapsed="0.000041"/>
+<status status="NOT RUN" start="2024-05-06T13:22:17.834382" elapsed="0.000055"/>
 </kw>
 <kw name="Check Poem">
 <arg>Syystihku (2013)</arg>
-<status status="NOT RUN" start="2024-05-06T13:14:26.728958" elapsed="0.000053"/>
+<status status="NOT RUN" start="2024-05-06T13:22:17.834889" elapsed="0.000093"/>
 </kw>
-<status status="FAIL" start="2024-05-06T13:14:13.502560" elapsed="13.226786">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=124.0.6367.91)
-Stacktrace:
-#0 0x5946801c1cb3 &lt;unknown&gt;
-#1 0x59467feb04a7 &lt;unknown&gt;
-#2 0x59467fe86b3e &lt;unknown&gt;
-#3 0x59467ff256cd &lt;unknown&gt;
-#4 0x59467ff3b576 &lt;unknown&gt;
-#5 0x59467ff1d1b3 &lt;unknown&gt;
-#6 0x59467feee24a &lt;unknown&gt;
-#7 0x59467feeec1e &lt;unknown&gt;
-#8 0x594680185fdb &lt;unknown&gt;
-#9 0x594680189f2b &lt;unknown&gt;
-#10 0x5946801720f1 &lt;unknown&gt;
-#11 0x59468018aa92 &lt;unknown&gt;
-#12 0x594680156faf &lt;unknown&gt;
-#13 0x5946801b0e08 &lt;unknown&gt;
-#14 0x5946801b0fe0 &lt;unknown&gt;
-#15 0x5946801c0e04 &lt;unknown&gt;
-#16 0x729b9d494ac3 &lt;unknown&gt;
-</status>
+<status status="FAIL" start="2024-05-06T13:22:14.894585" elapsed="2.940928">Evaluating expression "'don't come into my territory (2023)'.split(' ')" failed: SyntaxError: unterminated string literal (detected at line 1) (&lt;string&gt;, line 1)</status>
 </test>
-<status status="FAIL" start="2024-05-06T13:14:13.321729" elapsed="13.408358"/>
+<status status="FAIL" start="2024-05-06T13:22:14.748010" elapsed="3.088436"/>
 </suite>
 <statistics>
 <total>
@@ -218,27 +160,5 @@ Stacktrace:
 </suite>
 </statistics>
 <errors>
-<msg time="2024-05-06T13:14:26.719546" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=124.0.6367.91)
-Stacktrace:
-#0 0x5946801c1cb3 &lt;unknown&gt;
-#1 0x59467feb04a7 &lt;unknown&gt;
-#2 0x59467fe86b3e &lt;unknown&gt;
-#3 0x59467ff256cd &lt;unknown&gt;
-#4 0x59467ff3b576 &lt;unknown&gt;
-#5 0x59467ff1d1b3 &lt;unknown&gt;
-#6 0x59467feee24a &lt;unknown&gt;
-#7 0x59467feeec1e &lt;unknown&gt;
-#8 0x594680185fdb &lt;unknown&gt;
-#9 0x594680189f2b &lt;unknown&gt;
-#10 0x5946801720f1 &lt;unknown&gt;
-#11 0x59468018aa92 &lt;unknown&gt;
-#12 0x594680156faf &lt;unknown&gt;
-#13 0x5946801b0e08 &lt;unknown&gt;
-#14 0x5946801b0fe0 &lt;unknown&gt;
-#15 0x5946801c0e04 &lt;unknown&gt;
-#16 0x729b9d494ac3 &lt;unknown&gt;
-</msg>
 </errors>
 </robot>
