@@ -18,6 +18,8 @@ Run all tests
 cd tests && robot links.robot && robot form.robot && cd ..
 ```
 
+Remember to update tests and backups when adding new content!
+
 # To do / current projects
 
 - Ieskadulla cassette dubbing
