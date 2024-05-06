@@ -4,12 +4,12 @@ The source code of my home page.
 
 # Instructions
 
-Install Robot Framework & youtube-dl.
+Install Robot Framework & youtube-dl & .
 
 Create backups with youtube-dl
 
 ```bash
-cd tests-and-scripts && bash backups.sh
+cd tests-and-scripts && bash backups.sh && cd ..
 ```
 
 Test all the links 
