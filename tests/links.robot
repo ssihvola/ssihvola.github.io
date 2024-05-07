@@ -37,7 +37,7 @@ Check poetry links
 *** Keywords ***
 Check Video
     [Arguments]   ${video_title}
-		Open Browser   url=https://samposihvola.com   browser=chrome
+		Open Browser   url=https://samposihvola.com/works.html   browser=chrome
 		Click Link   ${video_title}
 		${current_window}   Switch Window   NEW
 		Wait Until Page Contains Element   
@@ -47,7 +47,7 @@ Check Video
 
 Check Poem
     [Arguments]   ${poem_title}
-    Open Browser   url=https://samposihvola.com   browser=chrome
+    Open Browser   url=https://samposihvola.com/works.html   browser=chrome
     Click Link   ${poem_title}
     ${current_window}   Switch Window   NEW
     ${title_array}=   Evaluate   '${poem_title}'.split(' ')

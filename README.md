@@ -23,7 +23,8 @@ Remember to update tests and backups when adding new content!
 # To do / current projects
 
 - Ieskadulla cassette dubbing
-- In The Time Of Water comeback
+- Samples from Hankalat tuhatvuotiset reitit
+- Front page text
 - Portfolio
 
 # Note to self
