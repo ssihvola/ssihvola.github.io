@@ -24,7 +24,7 @@ Remember to update tests and backups when adding new content!
 
 - Ieskadulla cassette dubbing
 - Samples from Hankalat tuhatvuotiset reitit
-- Front page text
+- Test automation to check the sitelinks
 - Portfolio
 
 # Note to self
