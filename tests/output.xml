@@ -1,60 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.10.12 on linux)" generated="2024-05-06T13:29:24.516558" rpa="false" schemaversion="5">
-<suite id="s1" name="Form" source="/home/ssihvola/Desktop/ssihvola.github.io/tests/form.robot">
-<test id="s1-t1" name="Contact form works" line="5">
+<robot generator="Robot 7.0 (Python 3.10.12 on linux)" generated="2024-05-08T12:10:19.608096" rpa="false" schemaversion="5">
+<suite id="s1" name="Links" source="/home/ssihvola/Desktop/ssihvola.github.io/tests/links.robot">
+<kw name="Set Log Level" owner="BuiltIn" type="SETUP">
+<arg>INFO</arg>
+<doc>Sets the log threshold to the specified level.</doc>
+<status status="PASS" start="2024-05-08T12:10:19.753570" elapsed="0.000335"/>
+</kw>
+<test id="s1-t1" name="Check sitelinks" line="6">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-05-06T13:29:24.668335" level="INFO">Opening browser 'chrome' to base url 'https://samposihvola.com'.</msg>
+<msg time="2024-05-08T12:10:19.754904" level="INFO">Opening browser 'chrome' to base url 'https://samposihvola.com'.</msg>
 <arg>url=https://samposihvola.com</arg>
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-05-06T13:29:24.667999" elapsed="1.244925"/>
+<status status="PASS" start="2024-05-08T12:10:19.754582" elapsed="4.386052"/>
 </kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-05-06T13:29:25.914989" level="INFO">Typing text 'testi' into text field 'name'.</msg>
-<arg>name</arg>
-<arg>testi</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-06T13:29:25.913824" elapsed="0.162451"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-05-06T13:29:26.077101" level="INFO">Typing text 'testi@testi.com' into text field 'email'.</msg>
-<arg>email</arg>
-<arg>testi@testi.com</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-06T13:29:26.076631" elapsed="0.112417"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-05-06T13:29:26.190049" level="INFO">Typing text '"hello"' into text field 'message'.</msg>
-<arg>message</arg>
-<arg>"hello"</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-06T13:29:26.189599" elapsed="0.095935"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-05-06T13:29:26.286445" level="INFO">Clicking element 'xpath=//button[text()='Send']'.</msg>
-<arg>xpath=//button[text()='Send']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-06T13:29:26.285971" elapsed="1.104227"/>
-</kw>
-<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<arg>Formspree</arg>
-<arg>timeout=10s</arg>
-<doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-05-06T13:29:27.390803" elapsed="0.042475"/>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-08T12:10:24.142651" level="INFO">Clicking link 'works'.</msg>
+<arg>works</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-08T12:10:24.141448" elapsed="0.376796"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2024-05-06T13:29:27.447703" level="INFO">Current page contains text 'Formspree'.</msg>
-<arg>Formspree</arg>
+<msg time="2024-05-08T12:10:24.558815" level="INFO">Current page contains text 'Music'.</msg>
+<arg>Music</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2024-05-06T13:29:27.433618" elapsed="0.014219"/>
+<status status="PASS" start="2024-05-08T12:10:24.520499" elapsed="0.038484"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Music</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-05-08T12:10:24.559686" elapsed="0.010919"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-08T12:10:24.571200" level="INFO">Clicking link 'contact'.</msg>
+<arg>contact</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-08T12:10:24.570949" elapsed="0.479507"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-05-08T12:10:25.083855" level="INFO">Current page contains text 'Contact'.</msg>
+<arg>Contact</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-05-08T12:10:25.051794" elapsed="0.032254"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Contact</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-05-08T12:10:25.084406" elapsed="0.012118"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-08T12:10:25.097242" level="INFO">Clicking link 'Sampo Sihvola'.</msg>
+<arg>Sampo Sihvola</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-08T12:10:25.096904" elapsed="0.090446"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-05-08T12:10:25.207349" level="INFO">Current page contains text 'My name is Sampo Sihvola'.</msg>
+<arg>My name is Sampo Sihvola</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-05-08T12:10:25.187837" elapsed="0.019633"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>My name is Sampo Sihvola</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-05-08T12:10:25.207803" elapsed="0.011296"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-08T12:10:25.219672" level="INFO">Clicking link 'works'.</msg>
+<arg>works</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-08T12:10:25.219407" elapsed="0.075046"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-08T12:10:25.295820" level="INFO">Clicking link 'home'.</msg>
+<arg>home</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-08T12:10:25.295105" elapsed="0.090708"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-05-08T12:10:25.401316" level="INFO">Current page contains text 'My name is Sampo Sihvola'.</msg>
+<arg>My name is Sampo Sihvola</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-05-08T12:10:25.386301" elapsed="0.015144"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>My name is Sampo Sihvola</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-05-08T12:10:25.401729" elapsed="0.009678"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-05-06T13:29:27.448174" elapsed="0.071005"/>
+<status status="PASS" start="2024-05-08T12:10:25.411771" elapsed="0.067120"/>
 </kw>
-<status status="PASS" start="2024-05-06T13:29:24.666933" elapsed="2.852634"/>
+<status status="PASS" start="2024-05-08T12:10:19.754067" elapsed="5.725137"/>
 </test>
-<status status="PASS" start="2024-05-06T13:29:24.517623" elapsed="3.002762"/>
+<status status="PASS" start="2024-05-08T12:10:19.609153" elapsed="5.870609"/>
 </suite>
 <statistics>
 <total>
@@ -63,7 +103,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Form">Form</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Links">Links</stat>
 </suite>
 </statistics>
 <errors>

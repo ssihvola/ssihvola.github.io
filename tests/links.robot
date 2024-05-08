@@ -3,6 +3,23 @@ Library   SeleniumLibrary
 Suite Setup    Set Log Level    INFO
 
 *** Test Cases ***
+Check sitelinks
+    Open Browser   url=https://samposihvola.com   browser=chrome
+    Click Link   works
+		Page Should Contain   Music
+		Wait Until Page Contains   Music
+		Click Link   contact
+    Page Should Contain   Contact
+		Wait Until Page Contains   Contact
+		Click Link   Sampo Sihvola
+		Page Should Contain   My name is Sampo Sihvola
+		Wait Until Page Contains   My name is Sampo Sihvola
+		Click Link   works
+		Click Link   home
+		Page Should Contain   My name is Sampo Sihvola
+		Wait Until Page Contains   My name is Sampo Sihvola
+		Close Browser
+
 Check music links
 		Check Video   Pummit Tampereella (2023)
 		Check Video   zalando k-market zalando (2021)
