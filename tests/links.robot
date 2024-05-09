@@ -12,12 +12,12 @@ Check sitelinks
     Page Should Contain   Contact
 		Wait Until Page Contains   Contact
 		Click Link   Sampo Sihvola
-		Page Should Contain   My name is Sampo Sihvola
-		Wait Until Page Contains   My name is Sampo Sihvola
+		Page Should Contain   This site is a personal digital archive dedicated to my artistic endeavours. 
+		Wait Until Page Contains   This site is a personal digital archive dedicated to my artistic endeavours. 
 		Click Link   works
 		Click Link   home
-		Page Should Contain   My name is Sampo Sihvola
-		Wait Until Page Contains   My name is Sampo Sihvola
+		Page Should Contain   This site is a personal digital archive dedicated to my artistic endeavours. 
+		Wait Until Page Contains   This site is a personal digital archive dedicated to my artistic endeavours. 
 		Close Browser
 
 Check music links
