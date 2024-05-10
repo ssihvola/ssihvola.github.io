@@ -24,7 +24,7 @@ Remember to update tests and backups when adding new content!
 
 - Portfolio
 	- Add additional info about the projects into README's
-	- 
+	- portfolio.html styling
 
 # Note to self
 
