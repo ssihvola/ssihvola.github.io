@@ -22,9 +22,9 @@ Remember to update tests and backups when adding new content!
 
 # To do / current projects
 
-- Ieskadulla cassette dubbing
-- Samples from Hankalat tuhatvuotiset reitit
 - Portfolio
+	- Add additional info about the projects into README's
+	- 
 
 # Note to self
 
