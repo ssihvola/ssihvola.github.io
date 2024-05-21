@@ -3,23 +3,6 @@ Library   SeleniumLibrary
 Suite Setup    Set Log Level    INFO
 
 *** Test Cases ***
-Check sitelinks
-    Open Browser   url=https://samposihvola.com   browser=chrome
-    Click Link   works
-		Page Should Contain   Music
-		Wait Until Page Contains   Music
-		Click Link   contact
-    Page Should Contain   Contact
-		Wait Until Page Contains   Contact
-		Click Link   Sampo Sihvola
-		Page Should Contain   This site is a personal digital archive dedicated to my artistic endeavours. 
-		Wait Until Page Contains   This site is a personal digital archive dedicated to my artistic endeavours. 
-		Click Link   works
-		Click Link   home
-		Page Should Contain   This site is a personal digital archive dedicated to my artistic endeavours. 
-		Wait Until Page Contains   This site is a personal digital archive dedicated to my artistic endeavours. 
-		Close Browser
-
 Check music links
 		Check Video   Pummit Tampereella (2023)
 		Check Video   zalando k-market zalando (2021)
@@ -54,7 +37,7 @@ Check poetry links
 *** Keywords ***
 Check Video
     [Arguments]   ${video_title}
-		Open Browser   url=https://samposihvola.com/works.html   browser=chrome
+		Open Browser   url=https://samposihvola.com  browser=chrome
 		Click Link   ${video_title}
 		${current_window}   Switch Window   NEW
 		Wait Until Page Contains Element   
@@ -64,7 +47,7 @@ Check Video
 
 Check Poem
     [Arguments]   ${poem_title}
-    Open Browser   url=https://samposihvola.com/works.html   browser=chrome
+    Open Browser   url=https://samposihvola.com   browser=chrome
     Click Link   ${poem_title}
     ${current_window}   Switch Window   NEW
     ${title_array}=   Evaluate   '${poem_title}'.split(' ')

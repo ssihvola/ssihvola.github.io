@@ -3,7 +3,7 @@ Library   SeleniumLibrary
 
 *** Test Cases ***
 Contact form works
-    Open Browser   url=https://samposihvola.com/contact.html   browser=chrome
+    Open Browser   url=https://samposihvola.com   browser=chrome
 		Input Text   name   testi
 		Input Text   email   testi@testi.com
 		Input Text   message   "hello"
