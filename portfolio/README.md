@@ -1,4 +1,4 @@
-# Qa Engineer
+# Sampo Sihvola
 
 ## Projects
 
