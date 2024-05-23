@@ -1,5 +1,8 @@
 baseurl: "/portfolio"
 title: Sampo Sihvola
 logo: /assets/img/logo.jpg
-# description: kuvan alla oleva selitys
-theme: jekyll-theme-minimal
+description: moi
+show_downloads: false
+remote_theme: pages-themes/minimal@v0.2.0
+plugins:
+- jekyll-remote-theme
